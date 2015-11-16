@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editFile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Press Button"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonReadAssets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick"
+            android:text="Read Assets"
+            />
+
+        <Button
+            android:id="@+id/buttonWriteFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buttonReadAssets"
+            android:onClick="onClick"
+            android:text="WriteFile"
+            />
+        <Button
+            android:id="@+id/buttonReadFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:text="ReadFile"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
